@@ -60,7 +60,7 @@ func TestServer(t *testing.T) {
 		服务端测试
 	*/
 	//1 创建一个server 句柄 s
-	s := NewServer("[zinx V0.3]")
+	s := NewServer()
 	// 增加路由处理
 	s.AddRouter(&myRouter{})
 	go ClientTest()
